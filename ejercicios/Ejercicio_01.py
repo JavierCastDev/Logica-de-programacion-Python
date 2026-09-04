@@ -7,19 +7,20 @@
 # - Múltiplos de 5 por la palabra "buzz".
 # - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
 
-def Ejercicio_01():
+def ejercicio_01():
     resultado = ""
 
     for i in range(1, 101):
-        if (i % 3 == 0 and i % 5 == 0):
-            resultado = "fizzbuzz"
-        elif (i % 5 == 0):
-            resultado = "buzz"
-        elif (i % 3 == 0):
-            resultado = "fizz"
+        if i % 3 == 0 and i % 5 == 0:
+            i = "fizzbuzz"
+        elif i % 5 == 0:
+            i = "buzz"
+        elif i % 3 == 0:
+            i = "fizz"
         else:
-            resultado = ""
+            i = i
 
-        print("Numero: " + str(i) + " " + resultado)
+        print("Numero: " + str(i))
 
-Ejercicio_01()
+
+ejercicio_01()
